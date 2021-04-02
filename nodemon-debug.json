@@ -1,6 +1,6 @@
 {
-  "watch": ["src"],
-  "ext": "ts",
+  "watch": ["src", "public", "views"],
+  "ext": "ts, hbs",
   "ignore": ["src/**/*.spec.ts"],
-  "exec": "TS_NODE_CACHE=false node --inspect -r ts-node/register src/main.ts"
+  "exec": "TS_NODE_CACHE=false node --inspect=$APP_DEBUG_PORT -r ts-node/register src/main.ts"
 }

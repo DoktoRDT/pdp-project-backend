@@ -1,9 +1,8 @@
 FROM node:14.15-alpine
-RUN apk --no-cache add python build-base
 
 VOLUME /app
 WORKDIR /app
-EXPOSE 4444
+EXPOSE 8080
 USER node:node
 
-CMD ["npm", "run", "watch:dev"]
+CMD ["npm", "run", "watch:debug"]
